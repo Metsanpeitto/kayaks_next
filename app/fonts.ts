@@ -8,7 +8,7 @@ export const lobster = Lobster({
 
 export const roboto = Roboto({
   display: "swap",
-  subsets: ["latin"],
+subsets: ["latin"],
   variable: "--font-roboto",
   weight: ["400", "700"],
 });
