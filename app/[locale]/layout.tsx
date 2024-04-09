@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import NavBar from "../_components/Navbar/Navbar";
+import Footer from "../_components/Footer";
+import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,6 +13,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+<<<<<<< HEAD:app/[locale]/layout.tsx
+  params: { locale },
+}: Readonly<{
+  children: React.ReactNode;
+  params: { locale: string };
+}>) {
+  return (
+    <html lang={locale}>
+      <body className={inter.className}>
+        <NavBar />
+        {children}
+        <Footer />
+=======
 }: {
   children: React.ReactNode;
 }) {
@@ -18,6 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main>{children}</main>
+>>>>>>> origin/main:app/layout.tsx
       </body>
     </html>
   );
