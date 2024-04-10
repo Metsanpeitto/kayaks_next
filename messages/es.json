@@ -1,5 +1,7 @@
 {
   "Navbar": {
-    "menu": "Menú"
+    "about": "Acerca de nosotros",
+    "contact": "Contacto",
+    "kayaks": "Kayaks"
   }
 }

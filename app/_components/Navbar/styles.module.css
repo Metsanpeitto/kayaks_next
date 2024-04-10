@@ -1,6 +1,7 @@
 .sectionNavbar {
   display: flex;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -19,9 +20,30 @@
 .title {
   font-size: 72px;
   text-align: center;
-  width: 100%;
+  width: 33%;
+  color: white;
 }
 
-.menu {
+.itemsGroup {
+  display: flex;
+  max-width: 33%;
+  min-width: 33%;
+  min-width: 33%;
+  justify-content: space-between;
+}
+
+.item {
+  color: white;
+  margin: 0 2em 0 2em;
+}
+
+.about {
   margin: 0 2em 0 0;
+  color: white;
+  min-width: fit-content;
+}
+
+.link {
+  text-decoration: unset !important;
+  color: white !important;
 }
